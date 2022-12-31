@@ -7,4 +7,4 @@ const personSchema = new Schema({
 	favoriteFoods: [{ type: String }],
 });
 
-export default personSchema;
+module.exports = mongoose.model("PersonSchema", personSchema);
