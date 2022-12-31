@@ -1,5 +1,5 @@
 require("dotenv").config();
-import PersonSchema from "./personSchema";
+const PersonSchema = require("./personSchema");
 const mongoose = require("mongoose");
 mongoose.connect(process.env.MONGO_URI, {
 	useNewUrlParser: true,
