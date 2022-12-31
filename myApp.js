@@ -22,12 +22,11 @@ const createAndSavePerson = (done) => {
 		favoriteFoods: ["chicken", "carbonara"],
 	});
 
-	person.save((err, data) => {
+	person.save(function (err, data) {
 		if (err) {
-			return done(err);
-		} else {
-			return done(data);
+			return console.error(err);
 		}
+		return done(null, data);
 	});
 };
 
