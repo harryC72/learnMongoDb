@@ -12,6 +12,8 @@ let Person = new PersonSchema({
 	favoriteFoods: ["sushi", "chinese dumplings"],
 });
 
+console.log("PERSON", person);
+
 const createAndSavePerson = (done) => {
 	done(null /*, data*/);
 };
